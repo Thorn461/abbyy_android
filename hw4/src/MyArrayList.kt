@@ -30,7 +30,6 @@ class MyArrayList<T> {
         for (i in id until size-1) {
             buffer[i] = buffer[i + 1]
         }
-        buffer[size-1] = null
-        size--;
+        buffer[--size] = null
     }
 }
